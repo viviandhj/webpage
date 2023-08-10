@@ -1,0 +1,44 @@
+
+:root {
+    --font-purple: #2E3192;
+    --lilac: #98A3E5;
+    --font-lilac-darker: #98a0d1;
+    --font-white: #FFF;
+    --bg-grey: #F7F7F7;
+    --bg-lightblue: #F3FFFF;
+    --main: #DDAB78;
+}
+
+@font-face {
+    font-family: "Guanabara";
+    src: url("../fonts/Guanabara_Sans_Bold.otf");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Guanabara";
+    src: url("../fonts/Guanabara_Sans_Medium.otf");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Guanabara";
+    src: url("../fonts/Guanabara_Sans_Book.otf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Guanabara";
+    src: url("../fonts/Guanabara_Sans_Light.otf");
+    font-style: normal;
+    font-weight: 200;
+}
+
+body {
+    font-family: "Guanabara";
+    background-color: var(--bg-lightblue);
+}
+

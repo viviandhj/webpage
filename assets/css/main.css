@@ -1,0 +1,502 @@
+@import url('/assets/css/style.css');
+
+
+/* about us */
+
+#pre-about {
+    height: 5em;
+    position: absolute;
+    top: 93%;
+}
+
+.about {
+    padding: 2.8em 1.8em 0 1.8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__title {
+    margin-top: 9vh;
+    color:  #1b6c5a;   
+    font-weight: 749;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 0.8em;
+}
+
+.about__subtitle {
+    color: var(--font-lilac-darker);
+    text-align: justify;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.about__text {
+    color: #1b6c5a;
+    text-align: justify;
+    line-height: 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.about__founder {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1.6em auto 2em auto;
+}
+
+.founder__img {
+    width: 60%;
+    margin: 1em auto 0.5em auto;
+}
+
+.founder__title {
+    color: #1b6c5a;
+    font-weight: 750;
+    font-size: 1rem;
+    margin-top: 0.4em;
+    margin-bottom: auto;
+    line-height: normal;
+}
+
+.founder__subtitle {
+    color: #1b6c5a;
+    font-size: 0.8rem;
+}
+
+#pre-portfolio {
+    height: 5em;
+    position: absolute;
+    top: 105%;
+}
+
+/* portfolio */
+
+
+.portfolio {
+    position: relative;
+    padding: 0 1.8em;
+    margin-bottom: 3.5em;
+}
+
+.portfolio__title {
+    color: #1b6c5a;
+    font-weight: 749;
+    font-size: 1.6rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.portfolio__text {
+    color: #1b6c5a;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.portfolio__projects {
+    text-align: center;
+}
+
+.job_title{
+    color: #1b6c5a;
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 2em;
+}
+
+.portfolio__subtitle {
+    width: 88%;
+    border: none;
+    border-radius: 0.25rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1em auto;
+}    
+
+
+@media screen and (min-width: 768px) {
+
+    #pre-portfolio {
+        top: 86%;
+    }
+}
+
+
+@media screen and (min-width: 480px) and (orientation: landscape) {
+
+
+    /*ABOUT*/
+
+    .about {
+        width: 75%;
+        margin: auto;
+    }
+
+    .about__text {
+        font-size: 0.95rem;
+    }
+
+    .about__founder {
+        display: flex;
+        text-align: center;
+        margin: 2rem;
+        flex-direction: row;
+        gap: 0.3em;
+    }
+
+    .founder__subtitle {
+        font-size: 0.7rem;
+    }
+
+
+    /*PORTFOLIO*/
+
+    #pre-portfolio {
+        top: 175%;
+    }
+
+    .nuvi {
+        grid-area: nuvi;
+        margin: auto;
+    }
+    
+    .amar {
+        grid-area: amar;
+        margin: auto;
+    }
+    
+    .vector {
+        grid-area: vector;
+        margin: auto;
+    }
+    
+    .javascript {
+        grid-area: javascript;
+        margin: auto;
+    }
+
+    .portfolio__projects {
+        width: 90%;
+        margin: auto;
+        gap: 2em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "nuvi amar"
+        "vector javascript";
+    }
+
+    .logo-animation {
+        grid-area: logo-animation;
+    }
+    
+    .intro-outro {
+        grid-area: intro-outro;
+    }
+    
+    .custom-animation {
+        grid-area: custom-animation;
+    }
+    
+    .logo-design {
+        grid-area: logo-design;
+    }
+     
+    .portfolio__text {
+        font-size: 0.95rem;
+    }
+
+    /*CONTACT*/
+
+
+    #contact {
+        top: 430%;
+        height: 5em;
+        position: absolute;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+    /* About */
+
+    #pre-about {
+        top: 760px;
+    }
+
+    .about {
+        width: 80%;
+        margin: auto;
+        padding: 2.8em 1.8em 2.8em 1.8em;
+    }
+
+    .about__title {
+        font-size: 1.6rem;
+    }
+
+    .about__subtitle {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .about__text {
+        text-align: justify;
+        line-height: 1.8rem;
+        font-weight: 100;
+        font-size: 1rem;
+        margin: 1.3em 3em;
+    }
+
+    .about__founder {
+        display: flex;
+        text-align: center;
+        margin: 2rem;
+        flex-direction: row;
+    }
+
+    .founder__img {
+        width: 35%;
+        margin: 1em auto 0.5em auto;
+    }
+
+    .founder__title {
+        display: inline-block;
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .founder__subtitle {
+        display: inline-block;
+        font-size: 0.8rem;
+    }
+
+    .founder {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pre-portfolio {
+        top: 120%;
+    }
+
+
+    /*Portfolio */
+
+    .box-container {
+        max-width: 1440px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .portfolio__title {
+        font-size: 1.6rem;
+    }
+
+    .portfolio__text {
+        font-size: 1.2rem;
+    }
+
+    .portfolio__subtitle {
+        width: 90%;
+    }
+
+    .portfolio__projects {
+        width: 90%;
+        margin: auto;
+        gap: 2em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "nuvi amar"
+        "vector javascript";
+    }
+
+    .portfolio__button {
+        height: 3.3em;
+    }
+
+
+    /*Contact*/
+
+    #contact {
+        height: 5em;
+        position: absolute;
+        top: 2430px;
+    }
+}
+
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+
+    #pre-portfolio {
+        top: 110%;
+    }
+
+    /*Portfolio */
+
+    .portfolio__title {
+        font-size: 1.8rem;
+    }
+  
+    .portfolio__text {
+        font-size: 1.4rem;
+    }
+
+    .portfolio__projects {
+        width: 90%;
+        margin: auto;
+        gap: 2em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "nuvi amar"
+        "vector javascript";
+    }
+
+    .portfolio__button {
+        height: 3.3em;
+    }
+
+
+    /*About*/
+
+    .about {
+        width: 65%;
+        margin: auto;
+    }
+
+    .about__title {
+        font-size: 1.6rem;
+    }
+
+    .about__text {
+        line-height: 1.7rem;
+        font-size: 1.3rem;
+    }
+
+    .about__founder {
+        flex-direction: row;
+    }
+
+    .founder__title {
+        font-size: 1.1rem;
+    }
+
+    .founder__subtitle {
+        font-size: 0.95rem;
+    }
+
+    .founder__img {
+        width: 45%;
+        margin: 1em auto 0.5em auto;
+    }
+
+    #contact {
+        height: 5em;
+        position: absolute;
+        top: 2650px;
+    }
+
+}
+
+@media screen and (min-width: 2560px) {
+
+    #pre-about {
+        height: 5em;
+        position: absolute;
+        top: 1280px;
+    }
+
+    /* About */
+
+    .about {
+        padding: 8em 25em 2.8em 25em;
+    }
+
+    .about__title {
+        font-weight: 749;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 0.8em;
+    }
+
+    .about__text {
+        text-align: justify;
+        line-height: 1.8rem;
+        font-weight: 100;
+        font-size: 1.5rem;
+    }
+
+    .about__founder {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        margin: 1.6em auto 2em auto;
+    }
+
+    .founder__img {
+        width: 45%;
+        margin: 1em auto 0.5em auto;
+    }
+
+    .founder__title {
+        font-size: 1.3rem;
+    }
+
+    .founder__subtitle {
+        font-size: 1.1rem;
+    }
+
+
+
+    /*Portfolio */
+
+    #pre-portfolio {
+        top: 65%;
+    }
+
+    .portfolio__title {
+        font-size: 1.8rem;
+    }
+  
+    .portfolio__text {
+        font-size: 1.4rem;
+    }
+
+    .portfolio__projects {
+        width: 90%;
+        margin: auto;
+        gap: 2em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "nuvi amar"
+        "vector javascript";
+    }
+
+    .job_title {
+        font-size: 1.7em;
+    }
+
+    .amar{
+        width: 100%;
+    }
+
+    .portfolio__title {
+        font-size: 2rem;
+    }
+
+    .portfolio__text {
+        font-size: 1.5rem;
+    }
+
+
+
+}
+
