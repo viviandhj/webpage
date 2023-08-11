@@ -188,22 +188,6 @@
         "nuvi amar"
         "vector javascript";
     }
-
-    .logo-animation {
-        grid-area: logo-animation;
-    }
-    
-    .intro-outro {
-        grid-area: intro-outro;
-    }
-    
-    .custom-animation {
-        grid-area: custom-animation;
-    }
-    
-    .logo-design {
-        grid-area: logo-design;
-    }
      
     .portfolio__text {
         font-size: 0.95rem;
