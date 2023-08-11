@@ -39,9 +39,10 @@
 }
 
 .contact__email {
-    margin: 0;
+    margin: 10px auto;
     font-size: .8rem;
     font-weight: 700;
+    text-decoration: none;
 }
 
 .contact__person {
