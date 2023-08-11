@@ -3,26 +3,26 @@
 
 /* about us */
 
-#pre-about {
+/* #pre-about {
     height: 5em;
     position: absolute;
     top: 93%;
-}
+} */
 
 .about {
-    padding: 2.8em 1.8em 0 1.8em;
+    padding: 50px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .about__title {
-    margin-top: 9vh;
-    color:  #1b6c5a;   
+    color: var(--secundary-color); 
+    margin-top: 50px;
+    margin-bottom: 0.8em;  
     font-weight: 749;
     font-size: 1.6rem;
     text-align: center;
-    margin-bottom: 0.8em;
 }
 
 .about__subtitle {
@@ -33,7 +33,7 @@
 }
 
 .about__text {
-    color: #1b6c5a;
+    color: var(--secundary-color);
     text-align: justify;
     line-height: 1rem;
     font-weight: 400;
@@ -82,7 +82,7 @@
 }
 
 .portfolio__title {
-    color: #1b6c5a;
+    color: var(--secundary-color);
     font-weight: 749;
     font-size: 1.6rem;
     text-align: center;
@@ -90,7 +90,7 @@
 }
 
 .portfolio__text {
-    color: #1b6c5a;
+    color: var(--secundary-color);
     font-size: 0.8rem;
     font-weight: 500;
     text-align: center;
@@ -100,14 +100,19 @@
     text-align: center;
 }
 
-.job_title{
-    color: #1b6c5a;
+.job__title{
+    color: var(--secundary-color);
     font-size: 1em;
     font-weight: 600;
     margin-top: 2em;
 }
 
-.portfolio__subtitle {
+.job__subtitle{
+    color: var(--secundary-color);
+    font-size: 0.8em;
+}
+
+.job__img {
     width: 88%;
     border: none;
     border-radius: 0.25rem;
@@ -210,14 +215,13 @@
 
     /* About */
 
-    #pre-about {
+    /* #pre-about {
         top: 760px;
-    }
+    } */
 
     .about {
         width: 80%;
         margin: auto;
-        padding: 2.8em 1.8em 2.8em 1.8em;
     }
 
     .about__title {
@@ -285,7 +289,7 @@
         font-size: 1.2rem;
     }
 
-    .portfolio__subtitle {
+    .job__img {
         width: 90%;
     }
 
@@ -390,16 +394,16 @@
 
 @media screen and (min-width: 2560px) {
 
-    #pre-about {
+    /* #pre-about {
         height: 5em;
         position: absolute;
         top: 1280px;
-    }
+    } */
 
     /* About */
 
     .about {
-        padding: 8em 25em 2.8em 25em;
+        padding: 70px 400px;
     }
 
     .about__title {
@@ -432,7 +436,7 @@
     }
 
     .founder__subtitle {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
 
@@ -462,8 +466,12 @@
         "vector javascript";
     }
 
-    .job_title {
+    .job__title {
         font-size: 1.7em;
+    }
+
+    .job__subtitle {
+        font-size: 1.3em;
     }
 
     .amar{
