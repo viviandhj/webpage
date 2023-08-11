@@ -73,9 +73,13 @@
     align-items: baseline;
 }
 
-.social-media__img {
+.social-media__a {
     width: 7%;
     height: 1.15em;
+}
+
+.social-media__img {
+    width: 24px;
 }
 
 .copyright {
@@ -125,7 +129,7 @@
         padding-top: 2em;
     }
   
-    .social-media__img {
+    .social-media__a {
         width: 6%;
     }
 }
@@ -166,7 +170,7 @@
         font-size: 0.7rem;
     }
 
-    .social-media__img {
+    .social-media__a {
         width: 5%;
     }
 
@@ -208,8 +212,12 @@
         font-size: 0.75rem;
     }
 
-    .social-media__img {
+    .social-media__a {
         width: 4%;
+    }
+
+    .social-media__a-git {
+        
     }
 
     .copyright {
@@ -242,7 +250,7 @@
         font-size: 1.2rem;
     }
 
-    .social-media__img {
+    .social-media__a {
         width: 4%;
     }
 
